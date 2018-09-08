@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.fragments.StartTestFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical|right"
+                android:text="Olá, muito obrigado pela intenção de me ajudar nesse trabalho. Meu nome é João, sou estudante de Ciência da Computação na universidade FUMEC e estou desenvolvendo um trabalho científico como pré requisito para a obtenção do título de bacharel. Esse teste acontecerá de forma automática, bastando somente que você aperte o botão abaixo para iniciar o teste e será puramente de performance, ou seja serão executados algumas rotinas nele para gerar alguns dados importantes para minha pesquisa relacionados a quanto tempo o seu celular com as caracteristicas físicas dele consegue executar uma rotina que eu escrevi." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical|right"
+                android:textColor="#FF0000"
+                android:textSize="14dp"
+                android:text="Esse app não vai ter a acesso a NENHUM dado pessoal seu, como redes sociais, dados de banco, senhas do aparelho e etc." />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:layout_gravity="center_vertical|right"
+                android:text="Qualquer dúvida com relação a esse app voce pode entrar em contato comigo pelo email j.lucas.gouveia@gmail.com ou pelo telefone/Whatsapp (31) 997618205" />
+
+            <Button
+                android:id="@+id/bt_start_test"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:text="Começar teste" />
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>

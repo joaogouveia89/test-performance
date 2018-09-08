@@ -1,6 +1,12 @@
 package joaogouveia89.github.io.testedeperformance.helpers;
 
+import android.Manifest;
+import android.content.Context;
+import android.content.pm.PackageManager;
 import android.os.Build;
+import android.provider.Settings;
+import android.support.v4.content.ContextCompat;
+import android.telephony.TelephonyManager;
 
 import java.io.File;
 import java.io.FileFilter;
@@ -91,4 +97,8 @@ public class HardwareInformation {
         return Build.BRAND;
     }
 
+    public static String getImei(Context ctx){
+        return Settings.Secure.getString(ctx.getContentResolver(),
+                Settings.Secure.ANDROID_ID);
+    }
 }
